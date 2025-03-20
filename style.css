@@ -1,0 +1,186 @@
+/* code to reset the default styling of tge browsers*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* styling for the general body of the webpage, specifying the font size and background properties*/
+body {
+  background-image: url('/870dbef95975edac975376b192e3fe90.jpg');
+  background-size: cover;
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 16px;
+}
+
+/* styling for the header container housing the hero section, the hero section consist of the header h1, paragraph, and button tags respectively*/
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-header {
+  padding-bottom: 20px;
+  font-size: 3.6rem;
+  text-align: center;
+  color: #FFF10E;
+  text-shadow: 0px 1px 2px black;
+}
+
+#hero-para {
+  font-size: 1.1rem;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 35px;
+  color: white;
+  text-shadow: 0px 1px 3px black ;
+  line-height: 22px;
+}
+
+/* styling for call-to-action button*/
+#button {
+  font-size: 1.2rem;
+  padding: 10px 50px;
+  border-radius: 30px;
+  background-color: #FFF10E;
+  border-style: none;
+  color: #111;
+  font-weight: 200px;
+  box-shadow: 0px 0px 3px 0px #111;
+}
+
+#button:hover {
+  background-color: black;
+  width: 0px 200px;
+  transform: scalex(1.2);
+  color: white;
+  cursor: pointer;
+  transition: transform(0.3s);
+}
+
+/* styling for the features section, which includes images, headers and paragraphs */
+.features-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 50px;
+  justify-content: space-between;
+}
+
+.feature-box1, .feature-box2, .feature-box3 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33.33%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #222;
+  box-shadow: 1px 1px 3px #595361;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+} 
+
+#feature-img1 img, #feature-img2 img, #feature-img3 img {
+  width: 100%;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.ft-hd {
+  color:#FCF03A;
+  text-align: center;
+  padding: 0px 10px;
+  font-size: 1.6rem;
+}
+
+.ft-para {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 10px 10px;
+  font-size: 0.8rem;
+}
+
+/* styling for footer section, containing contact and year of publishing */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#sm-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+#email, #fb, #linkedin {
+  width: 40px;
+  height: 40px;
+}
+
+#my-company{
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+#linkedin {
+  width: 35px;
+  height: 35px;
+  padding: 2px;
+}
+
+
+/* styling for tablet-sized screens and desktop screens*/
+@media (min-width: 576px) { 
+  header {
+    margin: 20px 180px;
+    height: 600px;
+  }
+  
+  #hero-header {
+  padding-bottom: 40px;
+  font-size: 4rem;
+}
+
+#hero-para {
+  font-size: 2rem;
+  line-height: 55px;
+  padding-bottom: 40px;
+}
+
+/* styling for call-to-action button*/
+#button {
+  font-size: 1.5rem;
+  padding: 10px 70px;
+}
+
+/* styling for the features section, which includes images, headers and paragraphs */
+.features-container {
+  flex-direction: row;
+  margin: 10px 50px;
+}
+
+.feature-box1, .feature-box2, .feature-box3 {
+  margin-left: 10px;
+  padding: 0 auto;
+} 
+
+.ft-hd {
+  font-size: 2rem;
+}
+
+.ft-para {
+  font-size: 1.2rem;
+  padding: 20px 30px;
+}
+}
