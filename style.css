@@ -8,7 +8,7 @@
 body {
   background-image: url('870dbef95975edac975376b192e3fe90.jpg');
   background-size: cover;
-  background-position: contain;
+  background-position: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 16px;
