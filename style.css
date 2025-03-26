@@ -1,213 +1,134 @@
-/* Reset default browser styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Ensures consistent sizing across all elements */
-}
-
-/* General body styling */
+/* General Styling */
 body {
-  background-image: url('/870dbef95975edac975376b192e3fe90.jpg'); /* Background image for visual impact */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Keeps background fixed during scroll */
-  font-family: 'Roboto', sans-serif; /* Clean, modern font */
-  font-size: 16px; /* Base font size */
-  color: #f5f5f5; /* Soft white color for text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* Hero Section Styling */
-header {
-  display: flex;
-  flex-direction: column; /* Arranges elements vertically */
-  justify-content: center;
-  align-items: center; /* Centers content horizontally */
-  height: 100vh; /* Full viewport height */
-  padding: 20px; /* Adds spacing inside the section */
-  text-align: center;
-}
-
-#hero-header {
-  font-size: 3.5rem; /* Large, eye-catching font size */
-  color: #9AEA0F; /* Vibrant coral color for header text */
-  text-shadow: 0px 2px 4px #111; /* Subtle black shadow for depth */
-  margin-bottom: 20px; /* Adds spacing below the header */
-}
-
-#hero-para {
-  font-size: 1.3rem; /* Slightly larger paragraph font size */
-  font-style: italic;
-  line-height: 1.6; /* Improves readability */
-  color: #E0E0E0; /* Light gray text color */
-  text-shadow: 0px 1px 3px #333; /* Soft shadow effect */
-  margin-bottom: 30px; /* Adds spacing below the paragraph */
-}
-
-#button {
-  font-size: 1.4rem; /* Comfortable button text size */
-  padding: 12px 50px; /* Balanced padding for button dimensions */
-  border-radius: 25px; /* Rounded edges for a modern look */
-  background-color: #FFBC42; /* Warm golden color for the button */
-  border: none; /* Removes the default border */
-  color: #222; /* Dark button text for contrast */
-  font-weight: bold;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Adds a soft shadow */
-  transition: transform 0.3s, background-color 0.3s; /* Smooth animations */
-}
-
-#button:hover {
-  background-color: #9AEA0F; /* Matches header text color */
-  color: #fff; /* Turns text white for emphasis */
-  transform: scale(1.1); /* Enlarges button slightly */
-  cursor: pointer; /* Indicates interactivity */
-}
-
-/* Features Section Styling */
-.features-container {
-  display: flex;
-  flex-direction: column; /* Vertically stacks features */
-  padding: 20px; /* Adds inner spacing */
-  gap: 20px; /* Creates consistent spacing between feature boxes */
-}
-
-.feature-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  border-radius: 10px; /* Rounded corners for a polished appearance */
-  background-color: #2E3440; /* Deep gray-blue background */
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow effect */
-}
-
-.feature-box img {
-  width: 120px; /* Fixed width for uniformity */
-  height: 120px; /* Fixed height for uniformity */
-  border-radius: 50%; /* Makes images circular */
-  margin-bottom: 10px;
-}
-
-.ft-hd {
-  font-size: 1.8rem; /* Larger, bold font for feature headings */
-  color: #9AEA0F; /* matches color for btton hover */
-  margin-bottom: 8px; /* Spacing below each header */
-  text-align: center; /* aligns text to center */
-}
-
-.ft-para {
-  font-size: 1rem; /* Standard font size for text */
-  font-style: italic;
-  text-align: center;
-  color: #E0E0E0; /* Light gray text for readability */
-}
-
-/* Footer Styling */
-footer {
-  display: flex;
-  flex-direction: column; /* Vertically stacks footer elements */
-  align-items: center; /* Centers content horizontally */
-  padding: 20px;
-  background-color: #2E3440; /* Matches feature box background color */
-  color: #f5f5f5; /* Soft white text for visibility */
-}
-
-#sm-container {
-  display: flex;
-  gap: 15px; /* Adds spacing between social media icons */
-  margin: 20px 0; /* Adds space around the icon container */
-}
-
-#sm-container img {
-  width: 40px; /* Uniform icon size */
-  height: 40px; /* Uniform icon size */
-}
-
-#my-company {
-  font-size: 0.9rem; /* Smaller text size for subtlety */
-  font-style: italic;
-  margin-top: 10px;
-}
-
-/* Media Queries for Tablets */
-@media (min-width: 576px) and (max-width: 768px) {
-  header {
-    padding: 30px; /* Adjusts padding for tablets */
-    height: auto; /* Adjusts height dynamically */
-  }
-
-  #hero-header {
-    font-size: 4rem; /* Larger header font for medium screens */
-  }
-
-  #hero-para {
-    font-size: 1.5rem; /* Adjust paragraph font size */
-    line-height: 1.8; /* Adjust line spacing */
-    margin-bottom: 40px; /* Extra spacing below the paragraph */
-  }
-
-  #button {
-    font-size: 1.5rem; /* Slightly larger button font */
-    padding: 15px 60px; /* Adjusts button dimensions */
-  }
-
-  .features-container {
-    flex-direction: row; /* Switches to horizontal layout */
-    justify-content: space-between; /* Spreads features evenly */
-  }
-
-  .feature-box {
-    flex: 1; /* Makes feature boxes equal width */
-    margin: 0 10px; /* Adds spacing between boxes */
-  }
-
-  .ft-hd {
-    font-size: 2rem; /* Enlarges feature headings */
-  }
-
-  .ft-para {
-    font-size: 1.2rem; /* Enlarges feature descriptions */
-  }
-}
-
-/* Media Queries for Desktops */
-@media (min-width: 769px) {
-  header {
-    padding: 50px; /* Adds generous padding for larger screens */
-    height: auto;
-  }
-
-  #hero-header {
-    font-size: 5rem; /* Maximum header font size for large screens */
-  }
-
-  #hero-para {
-    font-size: 1.7rem; /* Adjusts paragraph font size */
-    line-height: 2; /* Generous line spacing */
-    margin-bottom: 50px; /* Extra spacing for content flow */
-  }
-
-  #button {
-    font-size: 1.6rem; /* Larger button text size */
-    padding: 20px 70px; /* Enlarged button dimensions */
-  }
-
-  .features-container {
-    flex-direction: row; /* Horizontal layout */
+/* Navigation Bar */
+.navbar {
+    display: flex;
     justify-content: space-between;
-  }
+    align-items: center;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    color: white;
+}
 
-  .feature-box {
-    flex: 1;
-    margin: 0 15px; /* Wider spacing between feature boxes */
-  }
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
-  .ft-hd {
-    font-size: 2.2rem; /* Bold headings for emphasis */
-  }
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
 
-  .ft-para {
-    font-size: 1.4rem; /* Enlarged text for better readability */
-  }
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #f4f4f4;
+}
+
+/* Burger Menu (for mobile) */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+
+/* Responsive Design for Navbar */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #007BFF;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive Design for Features Section */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
   
