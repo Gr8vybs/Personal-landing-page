@@ -1,117 +1,79 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html lang="en">
-  <!-- The "lang" attribute is set to "en" for English language accessibility -->
-
 <head>
-  <meta charset="UTF-8">
-  <!-- The "charset" specifies the character encoding for the document -->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Ensures responsive scaling on all devices -->
-
-  <link rel="stylesheet" href="../style.css" />
-  <!-- External CSS file for styling -->
-
-  <title>Personal Landing Page</title>
-  <!-- The title that appears on the browser tab -->
+    <!-- Metadata for character encoding and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Objective: Linking to an external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Landing Page</title>
 </head>
-
 <body>
-  <!-- Main content of the webpage -->
+    <!-- OBJECTIVE: Create a visually appealing, user-friendly navigation bar -->
+    <!-- USE CASE: Provides quick access to different sections of the landing page -->
+    <nav class="navbar">
+        <!-- Website Logo -->
+        <div class="logo">MyWebsite</div>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <!-- USE CASE: Redirects users to the Hero Section -->
+            <li><a href="#hero">Home</a></li>
+            <!-- USE CASE: Redirects users to the Features Section -->
+            <li><a href="#features">Features</a></li>
+            <!-- USE CASE: Redirects users to the Footer Section -->
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        <!-- OBJECTIVE: Provide a mobile-friendly navigation menu -->
+        <!-- USE CASE: Displays burger icon for navigation on smaller screens -->
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
 
-  <!-- Hero Section -->
-  <header class="hero-container" id="hero-container">
-    <!-- Contains the hero banner -->
-    <div class="header-content">
-      <!-- Text content for the header -->
-      <h1 id="hero-header">
-        Unlock more benefits when you sign up with us today!
-      </h1>
-      <!-- Main header text -->
-      <p id="hero-para">
-        Get more for less when you sign up as a new user with us. Start by clicking the button below.
-      </p>
-      <!-- Supporting paragraph for the header -->
-      <button id="button" type="button">Sign up now</button>
-      <!-- Call-to-action button -->
-    </div>
-  </header>
-
-  <!-- Features Section -->
-  <section class="features-container" id="features-container">
-    <!-- Section for showcasing features -->
-
-    <!-- Feature Box 1 -->
-    <div class="feature-box">
-      <img src="mock-up.png" alt="Mockup icon" class="feature-img" />
-      <!-- Image related to the feature -->
-      <div class="feature-content">
-        <!-- Content specific to this feature -->
-        <h3 class="ft-hd">Free Mock-ups</h3>
+    <!-- OBJECTIVE: Introduce the product and engage users -->
+    <!-- USE CASE: Display a heading and call-to-action button to encourage user action -->
+    <header id="hero" class="hero">
+        <!-- Main Heading -->
+        <h1>Discover Our Product</h1>
         <!-- Subheading -->
-        <p class="ft-para">
-          Get free mock-ups for every design without additional costs.
-        </p>
-        <!-- Description paragraph -->
-      </div>
-    </div>
+        <p>Your one-stop solution to all to your needs!</p>
+        <!-- USE CASE: Attract users to sign up for services -->
+        <button>Sign Up Now</button>
+    </header>
 
-    <!-- Feature Box 2 -->
-    <div class="feature-box">
-      <img src="svg.png" alt="SVG icon" class="feature-img" />
-      <!-- SVG image for visual representation -->
-      <div class="feature-content">
-        <h3 class="ft-hd">Flexible File Formats</h3>
-        <!-- Subheading for feature -->
-        <p class="ft-para">
-          Request designs in multiple file formats of your choice.
-        </p>
-        <!-- Feature description -->
-      </div>
-    </div>
+    <!-- OBJECTIVE: Showcase features of the product or service -->
+    <!-- USE CASE: Highlights three key features with visual aids -->
+    <section id="features" class="features">
+        <!-- Feature 1: Mock-up display -->
+        <div class="feature">
+            <!-- USE CASE: Communicate key details visually -->
+            <img src="mock-up.png" alt="Feature 1">
+            <h3>Feature 1</h3>
+            <p>A short description of this feature.</p>
+        </div>
+        <!-- Feature 2: SVG graphic -->
+        <div class="feature">
+            <img src="svg.png" alt="Feature 2">
+            <h3>Feature 2</h3>
+            <p>A short description of this feature.</p>
+        </div>
+        <!-- Feature 3: Financial benefits -->
+        <div class="feature">
+            <img src="money.png" alt="Feature 3">
+            <h3>Feature 3</h3>
+            <p>A short description of this feature.</p>
+        </div>
+    </section>
 
-    <!-- Feature Box 3 -->
-    <div class="feature-box">
-      <img src="money.png" alt="Money icon" class="feature-img" />
-      <!-- Icon showcasing affordability -->
-      <div class="feature-content">
-        <h3 class="ft-hd">Less Cost</h3>
-        <!-- Descriptive heading -->
-        <p class="ft-para">
-          Enjoy huge discounts while maintaining premium design quality.
-        </p>
-        <!-- Supporting paragraph -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="footer-container">
-    <!-- Footer content starts here -->
-
-    <p>Contact us</p>
-    <!-- Contact information label -->
-
-    <!-- Social Media Icons -->
-    <div id="sm-container">
-      <a href="mailto:info@mycompany.com" aria-label="Email">
-        <img id="email" src="email.png" alt="Email icon" />
-        <!-- Email icon -->
-      </a>
-      <a href="https://facebook.com/mycompany" target="_blank" aria-label="Facebook">
-        <img id="fb" src="fb.png" alt="Facebook icon" />
-        <!-- Facebook icon -->
-      </a>
-      <a href="https://linkedin.com/company/mycompany" target="_blank" aria-label="LinkedIn">
-        <img id="linkedin" src="linkedin.png" alt="LinkedIn icon" />
-        <!-- LinkedIn icon -->
-      </a>
-    </div>
-
-    <p id="my-company">© 2025 All rights reserved, MyCompany</p>
-    <!-- Copyright notice -->
-  </footer>
-
+    <!-- OBJECTIVE: Provide contact information and establish credibility -->
+    <!-- USE CASE: Allows users to reach out for inquiries and shows copyright information -->
+    <footer id="footer">
+        <!-- Contact Information -->
+        <p>Contact us at: example@email.com</p>
+        <!-- Copyright Notice -->
+        <p>© 2025 MyCompany</p>
+    </footer>
 </body>
-
 </html>
