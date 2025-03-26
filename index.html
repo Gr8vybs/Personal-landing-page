@@ -1,79 +1,46 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata for character encoding and responsiveness -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Objective: Linking to an external CSS file for styling -->
-    <link rel="stylesheet" href="styles.css">
-    <title>Responsive Landing Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- OBJECTIVE: Create a visually appealing, user-friendly navigation bar -->
-    <!-- USE CASE: Provides quick access to different sections of the landing page -->
-    <nav class="navbar">
-        <!-- Website Logo -->
-        <div class="logo">MyWebsite</div>
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-            <!-- USE CASE: Redirects users to the Hero Section -->
-            <li><a href="#hero">Home</a></li>
-            <!-- USE CASE: Redirects users to the Features Section -->
-            <li><a href="#features">Features</a></li>
-            <!-- USE CASE: Redirects users to the Footer Section -->
-            <li><a href="#footer">Contact</a></li>
-        </ul>
-        <!-- OBJECTIVE: Provide a mobile-friendly navigation menu -->
-        <!-- USE CASE: Displays burger icon for navigation on smaller screens -->
-        <div class="burger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </nav>
-
-    <!-- OBJECTIVE: Introduce the product and engage users -->
-    <!-- USE CASE: Display a heading and call-to-action button to encourage user action -->
-    <header id="hero" class="hero">
-        <!-- Main Heading -->
-        <h1>Discover Our Product</h1>
-        <!-- Subheading -->
-        <p>Your one-stop solution to all to your needs!</p>
-        <!-- USE CASE: Attract users to sign up for services -->
-        <button>Sign Up Now</button>
-    </header>
-
-    <!-- OBJECTIVE: Showcase features of the product or service -->
-    <!-- USE CASE: Highlights three key features with visual aids -->
-    <section id="features" class="features">
-        <!-- Feature 1: Mock-up display -->
-        <div class="feature">
-            <!-- USE CASE: Communicate key details visually -->
-            <img src="mock-up.png" alt="Feature 1">
-            <h3>Feature 1</h3>
-            <p>A short description of this feature.</p>
-        </div>
-        <!-- Feature 2: SVG graphic -->
-        <div class="feature">
-            <img src="svg.png" alt="Feature 2">
-            <h3>Feature 2</h3>
-            <p>A short description of this feature.</p>
-        </div>
-        <!-- Feature 3: Financial benefits -->
-        <div class="feature">
-            <img src="money.png" alt="Feature 3">
-            <h3>Feature 3</h3>
-            <p>A short description of this feature.</p>
-        </div>
+  <header>
+    <!-- Hero section with headline and call-to-action button -->
+    <h1>Welcome to Your Dream Product</h1>
+    <p>Experience innovation like never before.</p>
+    <a href="#" class="cta">Learn More</a>
+  </header>
+  
+  <!-- Main content section -->
+  <main>
+    <!-- Features section showcasing product highlights -->
+    <section class="features">
+      <!-- Individual feature block -->
+      <article class="feature">
+        <img src="mock-up.png" alt="Feature 1 Icon">
+        <h2>Feature One</h2>
+        <p>Discover how our product can change your life.</p>
+      </article>
+      <article class="feature">
+        <img src="svg.png" alt="Feature 2 Icon">
+        <h2>Feature Two</h2>
+        <p>Unmatched quality and reliability.</p>
+      </article>
+      <article class="feature">
+        <img src="money.png" alt="Feature 3 Icon">
+        <h2>Feature Three</h2>
+        <p>Seamless integration with your needs.</p>
+      </article>
     </section>
-
-    <!-- OBJECTIVE: Provide contact information and establish credibility -->
-    <!-- USE CASE: Allows users to reach out for inquiries and shows copyright information -->
-    <footer id="footer">
-        <!-- Contact Information -->
-        <p>Contact us at: example@email.com</p>
-        <!-- Copyright Notice -->
-        <p>© 2025 MyCompany</p>
-    </footer>
+  </main>
+  
+  <!-- Footer with contact information -->
+  <footer>
+    <p>Contact us: info@example.com | Phone: +123456789</p>
+    <p>&copy; 2025 Your Company</p>
+  </footer>
 </body>
 </html>
